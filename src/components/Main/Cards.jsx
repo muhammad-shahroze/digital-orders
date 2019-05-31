@@ -5,22 +5,14 @@ import img1 from '../assets/95815696-to-do-list-seamless-pattern-background-busi
 
 class Cards extends Component {
   render() {
+    const cardData = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }];
+
     return (
-      <div className="container-fluid d-flex justify-content-center cards">
-        <div className="col-md-2 card-title">
-          <Card imgsrc={img1} />
-        </div>
-        <div className="col-md-2 card-title">
-          <Card imgsrc={img1} />
-        </div>
-        <div className="col-md-2 card-title">
-          <Card imgsrc={img1} />
-        </div>
-        <div className="col-md-2 card-title">
-          <Card imgsrc={img1} />
-        </div>
-        <div className="col-md-2 card-title">
-          <Card imgsrc={img1} />
+      <div className="container">
+        <div className="cards row">
+          {cardData.map(card => {
+            return <Card imgsrc={img1} key={card.id} />
+          })}
         </div>
       </div>
     )

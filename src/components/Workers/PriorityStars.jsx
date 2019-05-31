@@ -14,7 +14,6 @@ class PriorityStars extends Component {
     const { rating } = this.state;
     return (
       <div className="priority-stars">
-        <h6>Set Priority</h6>
         <StarRatingComponent
           name="rate1"
           starCount={3}
