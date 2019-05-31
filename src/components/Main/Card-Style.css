@@ -4,6 +4,7 @@ body {
 
 .card {
   width: 15rem;
+  transform: scale(1);
 }
 
 .card:hover {
@@ -14,7 +15,39 @@ body {
   position: center;
 }
 
-.card-body{
-  padding: 0;
-  margin: 0;
+.card-body {
+  padding: 3rem 0 !important;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  padding: 0.4 1.9rem;
+}
+
+.container-fluid .row {
+  padding-top: 6rem;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.play-pause label {
+  display: block;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+  cursor: pointer;
+  border-color: transparent transparent transparent #202020;
+  transition: 100ms all ease;
+  will-change: border-width;
+  border-style: double;
+  border-width: 0px 0 0px 60px;
+}
+.play-pause input[type='checkbox'] {
+  visibility: hidden;
+}
+.play-pause input[type='checkbox']:checked + label {
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
 }
