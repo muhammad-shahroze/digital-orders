@@ -12,11 +12,17 @@ class BurgerMenu extends Component {
 
   render() {
     return (
-      <div className="burgermenu-container" onClick={this.handleClick} >
-        <div className="bar1"></div>
-        <div className="bar2"></div>
-        <div className="bar3"></div>
-      </div>
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#"><li>Archives</li></a>
+          </ul>
+        </div>
+      </nav>
     )
   }
 }

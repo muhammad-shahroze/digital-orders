@@ -9,7 +9,7 @@ import AssignWorkers from '../Workers/AssignWorkers';
 
 const Card = props => {
   return (
-    <div className="col-3 card-title">
+    <div className="col-3">
       <div className="card text-left">
         <div className="overflow">
           <img src={props.imgsrc} alt="item 1" className="card-img-top" />
@@ -24,6 +24,7 @@ const Card = props => {
           <p className="card-text secondary">
             Please include some description Here!
         </p>
+          {/* <ToggleMetrcis /> */}
           <ProgressBar />
           <AssignWorkers />
           <Assignment />

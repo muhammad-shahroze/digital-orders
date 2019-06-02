@@ -21,7 +21,7 @@ class AssignWorkers extends Component {
     return (
       <div className="manage-workers">
         <button className="addWorker" onClick={this.increment}>+</button>
-        <div>{this.state.score} / 25</div>
+        <div>Workers Assigned {this.state.score} / 25</div>
         <button className="minusWorker" onClick={this.decrement}>-</button>
       </div>
     );

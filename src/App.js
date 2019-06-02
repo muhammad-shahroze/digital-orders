@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Title from './components/NavBar/Title'
 import BurgerMenu from './components/NavBar/BurgerMenu';
-import SettingsMenu from './components/NavBar/Settings';
+import SettingsMenu from './components/NavBar/SettingsMenu';
 import Cards from './components/Main/Cards'
 import SearchBox from './components/NavBar/SearchBox';
 
@@ -12,8 +12,10 @@ class App extends Component {
       <div className="App" >
         <Title />
         <SearchBox />
-        <BurgerMenu />
-        <SettingsMenu />
+        <div>
+          <BurgerMenu />
+          <SettingsMenu />
+        </div>
         <hr></hr>
         <Cards />
       </div>

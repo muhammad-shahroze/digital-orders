@@ -10,14 +10,16 @@ class Assignment extends Component {
 
   render() {
     return (
-      <div className="assignment-dropright">
-        <Dropdown direction="right" isOpen={this.state.btnDropright} toggle={() => { this.setState({ btnDropright: !this.state.btnDropright }); }}>
+      <div className="assignment-dropdown">
+        <Dropdown direction="down" isOpen={this.state.btnDropdown} toggle={() => { this.setState({ btnDropdown: !this.state.btnDropdown }); }}>
           <DropdownToggle caret>
             Unassigned
-        </DropdownToggle>
+          </DropdownToggle>
           <DropdownMenu>
-            <DropdownItem>Another Action</DropdownItem>
-            <DropdownItem>Another Action</DropdownItem>
+            <DropdownItem>Auto Assign</DropdownItem>
+            <DropdownItem>Select Workers</DropdownItem>
+            <DropdownItem>Schedule</DropdownItem>
+            <DropdownItem>Archive</DropdownItem>
           </DropdownMenu>
         </Dropdown>
       </div>

@@ -4,14 +4,43 @@ import img1 from '../assets/95815696-to-do-list-seamless-pattern-background-busi
 
 
 class Cards extends Component {
+
+  state = {
+    blurCard: false,
+    cardData: [{ id: 1, hovered: false }, { id: 2, hovered: false }, { id: 3, hovered: false }, { id: 4, hovered: false }],
+  }
+
+  onCardHover = (card) => {
+    let newCardData = this.state.cardData
+    newCardData.map(c => {
+      return c.id === card.id ? c.hovered = true : c.hovered = false
+    })
+    this.setState({
+      blurCard: true,
+      cardData: newCardData
+    })
+  }
+
+  onCardLeave = () => {
+    let newCardData = this.state.cardData
+    newCardData.map(c => {
+      return c.hovered = false
+    })
+    this.setState({
+      blurCard: false,
+      cardData: newCardData
+    })
+  }
+
   render() {
-    const cardData = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }];
 
     return (
       <div className="container">
         <div className="cards row">
-          {cardData.map(card => {
-            return <Card imgsrc={img1} key={card.id} />
+          {this.state.cardData.map(card => {
+            return <div className={this.state.blurCard === true && card.hovered === false ? "cardBlur" : ""} onMouseEnter={() => this.onCardHover(card)} onMouseLeave={() => this.onCardLeave(card)}>
+              <Card imgsrc={img1} key={card.id} />
+            </div>
           })}
         </div>
       </div>
