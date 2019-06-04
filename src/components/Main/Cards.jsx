@@ -3,7 +3,7 @@ import Card from './CardUI';
 import img1 from '../assets/95815696-to-do-list-seamless-pattern-background-business-flat-vector-illustration-checklist-task-list-symbol-.jpg'
 
 
-class Cards extends Component {
+export class Cards extends Component {
 
   state = {
     blurCard: false,
@@ -38,8 +38,8 @@ class Cards extends Component {
       <div className="container">
         <div className="cards row">
           {this.state.cardData.map(card => {
-            return <div className={this.state.blurCard === true && card.hovered === false ? "cardBlur" : ""} onMouseEnter={() => this.onCardHover(card)} onMouseLeave={() => this.onCardLeave(card)}>
-              <Card imgsrc={img1} key={card.id} />
+            return <div key={card.id} className={this.state.blurCard === true && card.hovered === false ? "cardBlur" : "cardNoBlur"} onMouseEnter={() => this.onCardHover(card)} onMouseLeave={() => this.onCardLeave(card)}>
+              <Card imgsrc={img1} />
             </div>
           })}
         </div>

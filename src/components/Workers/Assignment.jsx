@@ -38,7 +38,7 @@ class Assignment extends Component {
             </DropdownToggle>
           </div>
           <DropdownMenu>
-            <DropdownItem onClick={this.state.showStars === false ? <PriorityStars /> : null}>Auto Assign</DropdownItem>
+            {/* <DropdownItem onClick={this.state.showStars === false ? <PriorityStars /> : null}>Auto Assign</DropdownItem> */}
             <DropdownItem>Select Workers</DropdownItem>
             <DropdownItem><DatePicker placeholderText="Schedule" /></DropdownItem>
             <DropdownItem>Archive</DropdownItem>
