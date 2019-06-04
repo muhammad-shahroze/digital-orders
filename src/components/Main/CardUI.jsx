@@ -24,7 +24,6 @@ const Card = props => {
           <p className="card-text secondary">
             Please include some description Here!
         </p>
-          {/* <ToggleMetrcis /> */}
           <ProgressBar />
           <AssignWorkers />
           <Assignment />

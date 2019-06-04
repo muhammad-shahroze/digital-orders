@@ -43,6 +43,7 @@
 .assignment-dropdown button{
   width: 220px;
   margin-top: 10px;
+  border-radius: 15px;
 }
 
 .manage-workers {
@@ -58,4 +59,10 @@
 .minusWorker {
   border-radius: 15px;
   margin-left: 10px;
+}
+
+.material-icons {
+  float: left;
+  background: transparent;
+  border: transparent;
 }

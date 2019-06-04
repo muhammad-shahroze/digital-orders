@@ -6,6 +6,7 @@ import SettingsMenu from './components/NavBar/SettingsMenu';
 import Cards from './components/Main/Cards'
 import SearchBox from './components/NavBar/SearchBox';
 
+
 class App extends Component {
   render() {
     return (
