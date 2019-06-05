@@ -9,7 +9,7 @@
   border-width: 17px 0px 17px 34px;
   border-color: transparent transparent transparent #202020;
   position: absolute;
-  bottom: -20px;
+  bottom: 5px;
   margin-left: 28px;
   transition: 100ms all ease-in-out;
 }
@@ -21,7 +21,7 @@
   border-width: 0px 17px 0px 17px;
   position: absolute;
   margin-left: 28px;
-  bottom: -20px;
+  bottom: 5px;
   border-color: #202020;
   transition: 100ms all ease-in-out;
 }
@@ -30,12 +30,12 @@
   background-color: white !important;
 }
 
-.PlayPause {
-  margin-top: -51px;
+.play-pause {
+  margin-top: -40px;
 } 
 
 .priority-stars{
-  bottom: -26px;
+  bottom: -5px;
   margin-left: 166px;
   position: absolute;
 }
@@ -51,18 +51,23 @@
   margin-top: 10px;
 }
 
-.addWorker {
+.add-worker {
   border-radius: 15px;
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
-.minusWorker {
+.minus-worker {
   border-radius: 15px;
-  margin-left: 10px;
+  margin-left: 11px;
 }
 
 .material-icons {
   float: left;
   background: transparent;
   border: transparent;
+}
+
+.date-picker {
+  display: flex;
+  margin-left: 21px;
 }

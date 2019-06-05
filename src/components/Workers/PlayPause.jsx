@@ -8,7 +8,6 @@ class PlayPause extends Component {
 
 
   togglePlayPause = () => {
-    console.log('hi')
     this.setState({
       toggleClass: this.state.toggleClass === 'play' ? 'pause' : 'play'
     })
@@ -16,7 +15,7 @@ class PlayPause extends Component {
 
   render() {
     return (
-      <div className="PlayPause">
+      <div className="play-pause">
         <button className={`button ${this.state.toggleClass}`} onClick={this.togglePlayPause}></button>
       </div>
     )

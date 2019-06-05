@@ -1,11 +1,4 @@
-body,html{
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  }
-
-  .searchbar{
+.searchbar{
   margin-top: 2%;
   height: 60px;
   background-color: #353b48;
@@ -13,7 +6,7 @@ body,html{
   padding: 10px;
   }
 
-  .search_input{
+.search-input{
   color: white;
   border: 0;
   outline: 0;
@@ -23,18 +16,18 @@ body,html{
   transition: width 0.4s linear;
   }
 
-  .searchbar:hover > .search_input{
+.searchbar:hover > .search-input{
   padding: 0 10px;
   width: 450px;
   transition: width 0.4s linear;
   }
 
-  .searchbar:hover > .search_icon{
+.searchbar:hover > .search-icon{
   background: white;
   color: #e74c3c;
   }
 
-  .search_icon{
+.search-icon{
   height: 40px;
   width: 40px;
   float: right;
@@ -45,7 +38,7 @@ body,html{
   color:white;
   }
 
-  .burgermenu-container {
+.burgermenu-container {
     width: 35px;
     height: 35px;
     display: block;
@@ -53,19 +46,19 @@ body,html{
   }
 
  
- a
+a
  {
    text-decoration: none;
    color: #232323;
    transition: color 0.3s ease;
  }
  
- a:hover
+a:hover
  {
    color: tomato;
  }
  
- #menuToggle
+#menuToggle
  {
    display: block;
    position: relative;
@@ -76,7 +69,7 @@ body,html{
    user-select: none;
  }
  
- #menuToggle input
+#menuToggle input
  {
    display: block;
    width: 40px;
@@ -90,7 +83,7 @@ body,html{
    -webkit-touch-callout: none;
  }
  
- #menuToggle span
+#menuToggle span
  {
    display: block;
    width: 33px;
@@ -106,40 +99,40 @@ body,html{
                opacity 0.55s ease;
  }
  
- #menuToggle span:first-child
+#menuToggle span:first-child
  {
    transform-origin: 0% 0%;
  }
  
- #menuToggle span:nth-last-child(2)
+#menuToggle span:nth-last-child(2)
  {
    transform-origin: 0% 100%;
  }
  
- #menuToggle input:checked ~ span
+#menuToggle input:checked ~ span
  {
    opacity: 1;
    transform: rotate(45deg) translate(-2px, -1px);
    background: #232323;
  }
  
- #menuToggle input:checked ~ span:nth-last-child(3)
+#menuToggle input:checked ~ span:nth-last-child(3)
  {
    opacity: 0;
    transform: rotate(0deg) scale(0.2, 0.2);
  }
  
 
- #menuToggle input:checked ~ span:nth-last-child(2)
+#menuToggle input:checked ~ span:nth-last-child(2)
  {
    transform: rotate(-45deg) translate(0, -1px);
  }
 
- #menu
+#menu
  {
    position: absolute;
    width: 250px;
-   margin: -120px 0 0 -80px;
+   margin: -120px 0 0 -100px;
    padding: 50px;
    padding-top: 125px;
    background: transparent;
@@ -150,26 +143,26 @@ body,html{
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
  }
  
- #menu li
+#menu li
  {
    padding: 10px 0;
    font-size: 22px;
    color: #000;
  }
  
- #menuToggle input:checked ~ ul
+#menuToggle input:checked ~ ul
  {
    transform: none;
  }
 
-  .settings-container {
+.settings-container {
     width: 35px;
     height: 35px;
     display: block;
     float: right;
   }
 
-  .dot{
+.dot{
     width: 6px;
     height: 6px;
     margin-top: 10px;
@@ -177,7 +170,7 @@ body,html{
     background-color: black;
   }
 
-  .dot, .dot:before, .dot:after {
+.dot, .dot:before, .dot:after {
     position: absolute;
     width: 10px;
     height: 10px;
@@ -185,25 +178,25 @@ body,html{
     background-color: black;
   }
   
-  .dot:before, .dot:after {
+.dot:before, .dot:after {
     content: "";
   }
   
-  .dot:before {
+.dot:before {
     right: 12px;
     transition: right .2s ease-out;
   }
   
-  .dot:after {
+.dot:after {
     left: 12px;
     transition: left .2s ease-out;
   }
   
-  .settings-container:hover .dot:before {
+.settings-container:hover .dot:before {
     right: -12px;
   }
   
-  .settings-container:hover .dot:after {
+.settings-container:hover .dot:after {
     left: -12px;
   }
 

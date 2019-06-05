@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import "./Workers.css"
 import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap';
-import ProgressBar from './ProgressBar'
+// import ProgressBar from './ProgressBar'
 import PriorityStars from './PriorityStars';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
@@ -11,19 +11,18 @@ class Assignment extends Component {
   state = {
     btnDropright: false,
     showStars: false,
-    DataPicker: false,
+    dateScheduled: new Date(),
   }
 
   showPriorityStars = () => {
-    console.log('hello')
     this.setState({
       showPriorityStars: true
     })
   }
 
-  selectDate = () => {
+  selectDate = (date) => {
     this.setState({
-
+      dateScheduled: date,
     })
   }
 
@@ -38,10 +37,10 @@ class Assignment extends Component {
             </DropdownToggle>
           </div>
           <DropdownMenu>
-            {/* <DropdownItem onClick={this.state.showStars === false ? <PriorityStars /> : null}>Auto Assign</DropdownItem> */}
+            <DropdownItem>Auto Assign</DropdownItem>
             <DropdownItem>Select Workers</DropdownItem>
-            <DropdownItem><DatePicker placeholderText="Schedule" /></DropdownItem>
-            <DropdownItem>Archive</DropdownItem>
+            <DatePicker className="date-picker" selected={this.state.dateScheduled} onChange={this.selectDate} onSelect={this.handleSelect} placeholderText="Schedule" showTimeSelect dateFormat="Pp"/>
+            <DropdownItem >Archive</DropdownItem>
           </DropdownMenu>
         </Dropdown>
       </div>

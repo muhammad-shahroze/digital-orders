@@ -18,7 +18,9 @@ class App extends Component {
           <SettingsMenu />
         </div>
         <hr></hr>
-        <Cards />
+        <section>
+          <Cards />
+        </section>
       </div>
     );
   }

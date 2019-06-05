@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
+import Archives from '../Main/Archives'
 
 class BurgerMenu extends Component {
 
-  state = { menuToggle: false }
+  state = {
+     menuToggle: false,
+     archiveOrder: false
+  }
 
   handleClick = () => {
     this.setState({
@@ -19,7 +23,7 @@ class BurgerMenu extends Component {
           <span></span>
           <span></span>
           <ul id="menu">
-            <a href="#"><li>Archives</li></a>
+            <a href="Archives" ><li><Archives /></li></a>
           </ul>
         </div>
       </nav>

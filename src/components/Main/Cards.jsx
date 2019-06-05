@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Card from './CardUI';
-import img1 from '../assets/95815696-to-do-list-seamless-pattern-background-business-flat-vector-illustration-checklist-task-list-symbol-.jpg'
+import img1 from '../assets/126561.jpg'
 
 
 export class Cards extends Component {

@@ -16,13 +16,13 @@ const Card = props => {
         </div>
         <div className="card-body text-dark">
           <h4 className="card-title">
-            Order Name
+            Breakfast Pizza
         </h4>
           <h5 className="card-title">
-            Worker Name
+            Darren Smith
         </h5>
           <p className="card-text secondary">
-            Please include some description Here!
+            Includingeggs, bacon, parmesan cheese and green onion on top of our House-made Pizza Bread
         </p>
           <ProgressBar />
           <AssignWorkers />
