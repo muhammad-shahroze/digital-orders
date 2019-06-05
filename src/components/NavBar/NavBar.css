@@ -45,17 +45,16 @@
     float: left;
   }
 
- 
 a
  {
    text-decoration: none;
-   color: #232323;
+   color: #000;
    transition: color 0.3s ease;
  }
  
 a:hover
  {
-   color: tomato;
+   color: white;
  }
  
 #menuToggle
@@ -113,7 +112,7 @@ a:hover
  {
    opacity: 1;
    transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
+   background: #000;
  }
  
 #menuToggle input:checked ~ span:nth-last-child(3)
@@ -200,3 +199,15 @@ a:hover
     left: -12px;
   }
 
+.nav-title:hover {
+  color: white;
+}
+
+.archive a {
+  color: black;
+}
+
+.archive a:hover {
+  color: black;
+  text-decoration: none;
+}

@@ -9,8 +9,8 @@ import AssignWorkers from '../Workers/AssignWorkers';
 
 const Card = props => {
   return (
-    <div className="col-3">
-      <div className="card text-left">
+    <div className="">
+      <div className={`card ${window.innerWidth <= 992 ? 'w-100' : ''}`}>
         <div className="overflow">
           <img src={props.imgsrc} alt="item 1" className="card-img-top" />
         </div>
@@ -19,8 +19,8 @@ const Card = props => {
             Breakfast Pizza
         </h4>
           <h5 className="card-title">
-            Darren Smith
-        </h5>
+            {props.cardInfo.worker}
+          </h5>
           <p className="card-text secondary">
             Includingeggs, bacon, parmesan cheese and green onion on top of our House-made Pizza Bread
         </p>

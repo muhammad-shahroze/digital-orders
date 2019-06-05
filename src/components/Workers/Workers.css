@@ -68,6 +68,26 @@
 }
 
 .date-picker {
-  display: flex;
-  margin-left: 21px;
+  /* margin-left: 21px; */
+}
+
+.react-datepicker__time-container {
+  border-left: 0!important;
+  width: 100%!important;
+  border-top: 1px solid #aeaeae!important;
+} 
+
+.react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button) {
+  right: -30px!important;
+  top: 0;
+}
+
+.assignment-dropdown button {
+  width:inherit;
+}
+
+.react-datepicker__navigation--previous {
+  left: -40px!important;
+  border-right-color: #ccc;
+  top: 0!important;
 }

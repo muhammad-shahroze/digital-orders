@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Archives from '../Main/Archives'
+import { Router, Link } from "@reach/router"
 
 class BurgerMenu extends Component {
 
@@ -23,7 +23,7 @@ class BurgerMenu extends Component {
           <span></span>
           <span></span>
           <ul id="menu">
-            <a href="Archives" ><li><Archives /></li></a>
+            <li className="archive"><Link to="/Archives">Archive</Link></li>
           </ul>
         </div>
       </nav>

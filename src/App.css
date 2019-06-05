@@ -29,7 +29,7 @@ section .bg {
   font-size: 50px;
   color: black;
   display: flex;
-  justify-content: center;
+  align-self: center;
 }
 
 hr { 
@@ -79,9 +79,8 @@ hr {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 540px) {
-  .App {
-    display: flex;
+/* @media screen and (max-width: 800px) {
+  body {
     justify-content: center;
   }
-}
+} */
