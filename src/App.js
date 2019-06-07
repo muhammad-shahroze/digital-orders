@@ -9,17 +9,17 @@ import SearchBox from './components/NavBar/SearchBox';
 
 class App extends Component {
   state = {
-    cardData: [{ id: 1, hovered: false, worker: "Steve Brown", showCard: true },
-    { id: 2, hovered: false, worker: "Jim Tots", showCard: true },
-    { id: 3, hovered: false, worker: "Caroline Jenkins", showCard: true },
-    { id: 4, hovered: false, worker: "Tom Parker", showCard: true }],
+    cardData: [{ id: 1, hovered: false, worker: "Steve Brown", showCard: true, cardDataArchive: false, },
+    { id: 2, hovered: false, worker: "Jim Tots", showCard: true, cardDataArchive: false, },
+    { id: 3, hovered: false, worker: "Caroline Jenkins", showCard: true, cardDataArchive: false, },
+    { id: 4, hovered: false, worker: "Tom Parker", showCard: true, cardDataArchive: false, }],
     currentText: "",
     blurCard: false,
   }
 
 
   updateCurrentText = (event) => {
-    const newText = event.target.value
+    const newText = event.target.value.toUpperCase();
     const newCardData = this.state.cardData
     newCardData.map(data => {
       if (data.worker.includes(newText)) {

@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import { Router, Link } from "@reach/router"
+import { Link } from "@reach/router"
 
 class BurgerMenu extends Component {
 
   state = {
-     menuToggle: false,
-     archiveOrder: false
+    menuToggle: false,
+    archiveOrder: false
   }
 
   handleClick = () => {

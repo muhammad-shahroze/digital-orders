@@ -32,6 +32,10 @@ section .bg {
   align-self: center;
 }
 
+.nav a {
+  color: transparent;
+}
+
 hr { 
   display: block;
   margin-top: 3em;
@@ -78,9 +82,3 @@ hr {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-
-/* @media screen and (max-width: 800px) {
-  body {
-    justify-content: center;
-  }
-} */

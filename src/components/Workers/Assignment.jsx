@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import "./Workers.css"
 import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap';
 // import ProgressBar from './ProgressBar'
-import PriorityStars from './PriorityStars';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -39,8 +38,8 @@ class Assignment extends Component {
           <DropdownMenu>
             <DropdownItem>Auto Assign</DropdownItem>
             <DropdownItem>Select Workers</DropdownItem>
-            <DatePicker className="date-picker" selected={this.state.dateScheduled} onChange={this.selectDate} onSelect={this.handleSelect} placeholderText="Schedule" showTimeSelect dateFormat="Pp"/>
-            <DropdownItem >Archive</DropdownItem>
+            <DatePicker className="date-picker" selected={this.state.dateScheduled} onChange={this.selectDate} onSelect={this.handleSelect} placeholderText="Schedule" showTimeSelect dateFormat="Pp" />
+            <DropdownItem onClick={() => this.props.archiveJob()}>Archive</DropdownItem>
           </DropdownMenu>
         </Dropdown>
       </div>
